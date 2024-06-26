@@ -3,6 +3,8 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Database\Seeders\AdminSeeder;
+use Database\Seeders\SecuritySeeder;
 
 class Kernel extends HttpKernel
 {
@@ -37,6 +39,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'api' => [
@@ -63,5 +66,14 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'auth.security' => \App\Http\Middleware\SecurityAuth::class,
+        
     ];
+    
+    
+    protected $seeders = [
+        'AdminSeeder' => AdminSeeder::class,
+        'SecuritySeeder' => SecuritySeeder::class,
+    ];
+    
 }

@@ -18,7 +18,7 @@ class CreateVisitorsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('vehicle')->nullable();
+            $table->string('vehicle')->nullable();/*national id variable*/
             $table->text('purpose');
             $table->timestamps();
         });

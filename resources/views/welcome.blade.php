@@ -5,12 +5,12 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Welcome to the Visitor Management System</div>
+                    <div class="card-header">Welcome to BK Visitor Management System</div>
 
                     <div class="card-body">
                         <p>
-                            This is the home page of the Visitor Management System.
-                            Use the navigation menu to access different features of the application.
+                            This is the home page of the Visitor and Staff Management System at Bank of Kigali.<br>
+                            Kindly make sure you register as you check in and check out of the building.
                         </p>
                     </div>
                 </div>
