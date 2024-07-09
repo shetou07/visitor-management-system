@@ -1,6 +1,7 @@
-# Visitor and Staff Management System
+# BK Visitor and Staff Management System
 
-The Visitor and staff Management System is a web application built with Laravel that allows users to register and manage visitors and staff.
+The BK Visitor and staff Management System is a web application built with Laravel that allows users to register and manage visitors and staff.
+It also has an admin side that helps to generate reports for both the visitors and staff. 
 
 ## Prerequisites
 
@@ -62,3 +63,7 @@ Make sure you have the following software installed on your local machine:
 ## Admin credentials
 -Email: boss@admin.bk
 -Password:boss@bk
+
+## Security credentials
+-Staff_ID:BK20
+-Password:password1
